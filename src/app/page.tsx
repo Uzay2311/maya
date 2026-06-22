@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { guides, categories } from "@/lib/posts";
 import Image from "next/image";
+// hero no longer uses a background image — club-bg CSS handles atmosphere
 
 const difficultyColor: Record<string, string> = {
   Beginner: "text-emerald-400 border-emerald-400/30 bg-emerald-400/10",
@@ -14,18 +15,8 @@ export default function Home() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=1200&q=80"
-            alt="DDJ-FLX4"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-[#0a0a0a]" />
-        </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <section className="relative min-h-[70vh] flex items-center justify-center">
+        <div className="text-center px-6 max-w-4xl mx-auto">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase border border-purple-500/40 text-purple-400 bg-purple-500/10 mb-6">
             Pioneer DDJ-FLX4
           </span>

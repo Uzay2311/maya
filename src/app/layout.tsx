@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Maya — DJ & Music Blog",
-  description: "DJ vlog and blog by Maya",
+  title: "FLX4 Guide — DDJ-FLX4 DJ Controller Tutorials",
+  description: "Step-by-step guides and tutorials for the Pioneer DDJ-FLX4 DJ controller.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-1">{children}</main>
         <footer className="border-t border-white/10 py-8 text-center text-sm text-white/40">
-          © {new Date().getFullYear()} Maya. All rights reserved.
+          © {new Date().getFullYear()} FLX4 Guide. Not affiliated with Pioneer DJ.
         </footer>
       </body>
     </html>
